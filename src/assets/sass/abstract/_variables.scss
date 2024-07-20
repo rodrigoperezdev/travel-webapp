@@ -1,0 +1,35 @@
+// App colors
+$theme-color: #28b0a6;
+$dark-color: #212529;
+$gray-color: #546179;
+$cadet-gray-color: #99a3ad;
+$yellow-color: #f5a623;
+$light-yellow-color: #fef2de;
+$white-color: #ffffff;
+
+//Breakpoints
+$x-small: 576px;
+$large: 992px;
+$medium: 768px;
+
+//Hamburger
+$hamburger-padding-x: 14px !default;
+$hamburger-padding-y: 0 !default;
+$hamburger-layer-width: 30px !default;
+$hamburger-layer-height: 4px !default;
+$hamburger-layer-spacing: 5px !default;
+$hamburger-layer-color: $dark-color !default;
+$hamburger-layer-border-radius: 4px !default;
+$hamburger-hover-opacity: 0.7 !default;
+$hamburger-active-layer-color: $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter: false !default;
+$hamburger-hover-filter: opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+//effects
+$box-shadow: 0px 32px 84px 0px rgba(14, 86, 124, 0.16);

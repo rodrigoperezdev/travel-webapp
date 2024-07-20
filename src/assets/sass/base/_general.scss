@@ -1,0 +1,26 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  padding-inline: 10rem;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding-inline: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding-inline: 1.5rem;
+  }
+}
+
+li {
+  list-style: none;
+}
