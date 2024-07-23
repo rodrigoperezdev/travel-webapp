@@ -1,12 +1,13 @@
+//Variables
+@import "abstract/variables";
+
 //Base
 @import "base/fonts";
 @import "base/general";
 
-//Variables
-@import "abstract/variables";
-
 //Components
 @import "components/buttons";
+@import "components/search-carousel";
 
 //Layout
 @import "layout/header";
