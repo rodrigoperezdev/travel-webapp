@@ -142,6 +142,87 @@ li {
     display: block;
   }
 }
+.search-carousel {
+  margin-block: 3.5rem;
+}
+.search-carousel__container {
+  border-radius: 2rem;
+  background-color: #6c757d; /* Color de fondo base */
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.22) 100%), url("src/assets/images/header/home-search.jpeg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 9.5rem 5.19rem 9.12rem 8.5rem;
+}
+.search-carousel__title {
+  margin-bottom: 2.5rem;
+}
+.search-carousel__title-place {
+  margin-left: 2.5rem;
+  position: relative;
+}
+.search-carousel__title-place::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 0.125rem;
+  top: 1rem;
+  left: -2.5rem;
+  background-color: #ffffff;
+}
+.search-carousel__description {
+  display: flex;
+  justify-content: space-between;
+}
+.search-carousel__description--climate div:first-child {
+  margin-bottom: 2rem;
+}
+.search-carousel__cards {
+  display: flex;
+}
+.search-carousel__cards--icon {
+  margin-right: 1.5rem;
+}
+.search-carousel__cards--description p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1500px) {
+  .search-carousel__container {
+    padding: 8.5rem 4.19rem 8.12rem 7.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .search-carousel__container {
+    padding: 4.5rem 4rem 8.12rem 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .search-carousel {
+    margin-block: 2rem;
+  }
+  .search-carousel__container {
+    padding: 4rem 1.8rem 8.12rem 2rem;
+  }
+  .search-carousel__title {
+    margin-bottom: 2rem;
+  }
+  .search-carousel__title-place::before {
+    top: 0.75rem;
+  }
+  .search-carousel__description {
+    flex-direction: column-reverse;
+  }
+  .search-carousel__description--climate {
+    margin-top: 2rem;
+  }
+  .search-carousel__description--climate img {
+    width: 2.3rem;
+  }
+  .search-carousel__description--climate div:first-child {
+    margin-bottom: 1rem;
+  }
+}
 .header {
   display: flex;
   padding-block: 1.87rem;
