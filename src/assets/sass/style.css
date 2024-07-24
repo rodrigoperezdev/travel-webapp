@@ -10,18 +10,85 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2%;
+  margin: 0;
+}
+
+p {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 1500px) {
+  h1 {
+    font-size: 7rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   body {
     padding-inline: 4rem;
   }
+  h1 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
   body {
     padding-inline: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
   }
 }
 li {
   list-style: none;
+}
+
+.font-underline {
+  text-decoration: underline;
+}
+
+.font-bold {
+  font-weight: 600;
 }
 
 .btn {
@@ -213,13 +280,13 @@ li {
   .search-carousel__description {
     flex-direction: column-reverse;
   }
-  .search-carousel__description--climate {
+  .search-carousel__description-climate {
     margin-top: 2rem;
   }
-  .search-carousel__description--climate img {
+  .search-carousel__description-climate img {
     width: 2.3rem;
   }
-  .search-carousel__description--climate div:first-child {
+  .search-carousel__description-climate div:first-child {
     margin-bottom: 1rem;
   }
 }

@@ -9,15 +9,83 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 1200px) {
-  body {
-    padding-inline: 4rem;
+h1 {
+  color: $white-color;
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2%;
+  margin: 0;
+}
+
+p {
+  color: $white-color;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: $xx-large) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  p {
+    font-size: 1.4rem;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $x-large) {
+  body {
+    padding-inline: 4rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: $large) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: $small) {
   body {
     padding-inline: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 }
 
