@@ -11,7 +11,7 @@ export const SearchCarousel = () => {
         <div className="search-carousel__description">
           <div className="search-carousel__description-climate">
             <div>
-              <p>-02° C Very Cold</p>
+              <p>-02° C Very Colder</p>
             </div>
             <button className="search-carousel__button">
               <img src="src/assets/images/home/prev.svg" alt="Previous" />
