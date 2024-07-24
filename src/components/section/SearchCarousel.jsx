@@ -6,7 +6,7 @@ export const SearchCarousel = () => {
           <p className="search-carousel__title-place">
             The Himalayan Mountain Ranges
           </p>
-          <h1 className="search-carousel__title-country">Nepal Country</h1>
+          <h1 className="search-carousel__title-country">Nepal Countrei</h1>
         </div>
         <div className="search-carousel__description">
           <div className="search-carousel__description-climate">
