@@ -6,23 +6,23 @@ export const SearchCarousel = () => {
           <p className="search-carousel__title-place">
             The Himalayan Mountain Ranges
           </p>
-          <h1>Nepal Country</h1>
+          <h1 className="search-carousel__title-country">Nepal Country</h1>
         </div>
         <div className="search-carousel__description">
           <div className="search-carousel__description-climate">
             <div>
               <p>-02° C Very Cold</p>
             </div>
-            <button>
+            <button className="search-carousel__button">
               <img src="src/assets/images/home/prev.svg" alt="Previous" />
             </button>
-            <button>
+            <button className="search-carousel__button">
               <img src="src/assets/images/home/next.svg" alt="Next" />
             </button>
           </div>
 
           <div className="search-carousel__cards">
-            <div className="search-carousel__cards--icon">
+            <div className="search-carousel__cards-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="64"
@@ -49,9 +49,10 @@ export const SearchCarousel = () => {
                 />
               </svg>
             </div>
-            <div className="search-carousel__cards--description">
+            <div className="search-carousel__cards-description">
               <p>
-                We Accept Payment Through <br></br>All Cards & Banking
+                We Accept Payment Through <br />
+                All Cards & Banking
               </p>
               <p className="font-bold font-underline">Book Now!</p>
             </div>
