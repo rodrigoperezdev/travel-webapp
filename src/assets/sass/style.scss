@@ -1,5 +1,6 @@
-//Variables
+//Abstract
 @import "abstract/variables";
+@import "abstract/mixins";
 
 //Base
 @import "base/fonts";
@@ -9,6 +10,7 @@
 //Components
 @import "components/buttons";
 @import "components/search-carousel";
+@import "components/search-form";
 
 //Layout
 @import "layout/header";

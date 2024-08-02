@@ -1,9 +1,10 @@
-import { SearchCarousel } from "../components/section";
+import { SearchCarousel, SearchForm } from "../components/section";
 
 export const Home = () => {
   return (
     <>
       <SearchCarousel />
+      <SearchForm />
     </>
   );
 };
