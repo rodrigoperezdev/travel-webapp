@@ -3,15 +3,13 @@ export const SearchCarousel = () => {
     <div className="search-carousel">
       <div className="search-carousel__container">
         <div className="search-carousel__title">
-          <p className="search-carousel__title-place">
-            The Himalayan Mountain Ranges
-          </p>
-          <h1 className="search-carousel__title-country">Nepal Country</h1>
+          <p className="search-carousel__title-place">The Mexican paradise</p>
+          <h1 className="search-carousel__title-country">Cancun</h1>
         </div>
         <div className="search-carousel__description">
           <div className="search-carousel__description-climate">
             <div>
-              <p>-02° C Very Colder</p>
+              <p>38° C Very Hot</p>
             </div>
             <button className="search-carousel__button">
               <img src="src/assets/images/home/prev.svg" alt="Previous" />
