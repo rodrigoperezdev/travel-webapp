@@ -7,12 +7,13 @@ import {
   SignUp,
   Specials,
 } from "./pages";
-import { Header } from "./components/layout/Header";
+import { Header, SideBar } from "./components/layout";
 
 function App() {
   return (
     <>
       <Header />
+      <SideBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destination" element={<Destination />} />
