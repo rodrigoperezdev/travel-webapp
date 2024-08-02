@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -9,17 +11,40 @@ export const Header = () => {
 
   return (
     <header className="header">
-      <img
-        className="header__logo"
-        src="src/assets/images/logo/emprise.svg"
-        alt=""
-      />
+      <Link to="/">
+        <img
+          className="header__logo"
+          src="src/assets/images/logo/emprise.svg"
+          alt=""
+        />
+      </Link>
       <div className={`header__menu ${isActive ? "active-menu" : ""}`}>
         <nav className={`header__nav ${isActive ? "active-menu" : ""}`}>
           <ul className="header__list">
-            <li className="header__item">Destination</li>
-            <li className="header__item">Activities</li>
-            <li className="header__item">Specials</li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "header__item header__item--active" : "header__item"
+              }
+              to="/destination"
+            >
+              Destination
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "header__item header__item--active" : "header__item"
+              }
+              to="/activities"
+            >
+              Activities
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "header__item header__item--active" : "header__item"
+              }
+              to="/specials"
+            >
+              Specials
+            </NavLink>
           </ul>
           <img
             className="header__search-icon"
@@ -28,8 +53,10 @@ export const Header = () => {
           />
         </nav>
         <div className="header__login">
-          <span className="header__login-text">Login</span>
-          <button className="btn btn--primary">Sign up</button>
+          <Link className="header__login-text" to="/login">
+            Login
+          </Link>
+          <Link className="btn btn--primary">Sign up</Link>
         </div>
       </div>
 

@@ -36,6 +36,11 @@ button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
 @media screen and (max-width: 1500px) {
   h1 {
     font-size: 7rem;
@@ -314,6 +319,17 @@ li {
 }
 .header__item {
   padding-inline-end: 4rem;
+  position: relative;
+}
+.header__item--active::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background-color: rgb(231, 189, 121);
+  bottom: 3px;
+  left: 0;
+  z-index: -1;
 }
 .header__login {
   display: flex;
@@ -339,7 +355,7 @@ li {
     padding-top: 6rem;
     padding-left: 3rem;
   }
-  .header__nav li {
+  .header__nav a {
     margin-bottom: 2rem;
   }
   .header__list {

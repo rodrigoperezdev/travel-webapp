@@ -35,6 +35,11 @@ button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
 @media screen and (max-width: $xx-large) {
   h1 {
     font-size: 7rem;
