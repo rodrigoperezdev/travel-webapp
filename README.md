@@ -1,22 +1,14 @@
-# React + Vite
+##Travel WebApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A project I am currently working on, the idea is to have a travel web app which helps you get the perfect vacation place on your next adventure.
 
-Currently, two official plugins are available:
+Technologies:
+Front End:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
-# travel-webapp
+- HTML5
+- SASS
+- JavaScript
+- React
+- Firebase (Backend as a service)
+
+  
