@@ -5,7 +5,11 @@ export const LocationInput = () => {
         <h3 className="search-form__title">Location</h3>
       </div>
       <div className="search-form__input-container">
-        <input type="text" placeholder="Enter your destination" />
+        <input
+          className="search-form__input"
+          type="text"
+          placeholder="Enter your destination"
+        />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"

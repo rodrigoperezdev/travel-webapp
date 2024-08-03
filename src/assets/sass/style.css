@@ -325,6 +325,7 @@ li {
   position: relative;
   display: inline-block;
   z-index: 2;
+  margin-bottom: 1rem;
 }
 .search-form__title::after {
   content: "";
@@ -351,7 +352,7 @@ li {
   display: flex;
   align-items: center;
 }
-.search-form__input-container input::-moz-placeholder {
+.search-form__input::-moz-placeholder {
   color: #99a3ad;
   font-size: 1.125rem;
   font-style: normal;
@@ -361,7 +362,7 @@ li {
   border: none;
   padding: 0.5rem 0.5rem 0.5rem 0rem;
 }
-.search-form__input-container input, .search-form__input-container span, .search-form__input-container input::placeholder {
+.search-form__input, .search-form__input::placeholder {
   color: #99a3ad;
   font-size: 1.125rem;
   font-style: normal;
@@ -371,14 +372,11 @@ li {
   border: none;
   padding: 0.5rem 0.5rem 0.5rem 0rem;
 }
-.search-form__input-container input::-moz-placeholder:focus-visible {
+.search-form__input::-moz-placeholder:focus-visible {
   outline: transparent !important;
 }
-.search-form__input-container input:focus-visible, .search-form__input-container span:focus-visible, .search-form__input-container input::placeholder:focus-visible {
+.search-form__input:focus-visible, .search-form__input::placeholder:focus-visible {
   outline: transparent !important;
-}
-.search-form__input-container span {
-  padding-right: 3rem;
 }
 .search-form__search-button button {
   justify-content: flex-end;
@@ -434,6 +432,22 @@ li {
     justify-content: space-between;
   }
 }
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: "Poppins", sans-serif !important;
+  color: #99a3ad !important;
+  font-size: 1.125rem !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111.111%;
+  text-decoration-line: underline;
+  border: none;
+  padding: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
 .header {
   display: flex;
   padding-block: 1.87rem;

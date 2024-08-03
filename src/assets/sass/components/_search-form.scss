@@ -15,6 +15,7 @@
     position: relative;
     display: inline-block;
     z-index: 2;
+    margin-bottom: 1rem;
 
     &::after {
       @include underline;
@@ -39,25 +40,21 @@
   &__input-container {
     display: flex;
     align-items: center;
+  }
 
-    & input,
-    & span,
-    & input::placeholder {
-      color: $cadet-gray-color;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 111.111%;
-      text-decoration-line: underline;
-      border: none;
-      padding: 0.5rem 0.5rem 0.5rem 0rem;
+  &__input,
+  &__input::placeholder {
+    color: $cadet-gray-color;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 111.111%;
+    text-decoration-line: underline;
+    border: none;
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
 
-      &:focus-visible {
-        outline: transparent !important;
-      }
-    }
-    & span {
-      padding-right: 3rem;
+    &:focus-visible {
+      outline: transparent !important;
     }
   }
 

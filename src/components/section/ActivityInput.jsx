@@ -6,7 +6,11 @@ export const ActivityInput = () => {
       </div>
       <div>
         <div className="search-form__input-container">
-          <input type="text" placeholder="Bungee Jump" />
+          <input
+            className="search-form__input"
+            type="text"
+            placeholder="Bungee Jump"
+          />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
