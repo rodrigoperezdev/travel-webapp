@@ -1,4 +1,8 @@
+import { useFetchData } from "../../hooks";
+
 export const SearchCarousel = () => {
+  const { data, error } = useFetchData("https://pokeai.co/api/v2/");
+
   return (
     <div className="search-carousel">
       <div className="search-carousel__container">
