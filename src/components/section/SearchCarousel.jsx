@@ -1,24 +1,66 @@
-import { useFetchData } from "../../hooks";
+import { useState } from "react";
+import { useFetchData } from "../../hooks/useFetchData";
+import { Loader } from "./Loader";
+
+//This is the temporary DB I am using
+import places from "../../assets/js/placesDB";
 
 export const SearchCarousel = () => {
-  const { data, error } = useFetchData("https://pokeai.co/api/v2/");
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+  const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${places[currentIndex].title}&aqi=no`;
+  const { data, isLoading } = useFetchData(url);
+
+  const handleNextPrevSlide = (option) => {
+    if ((option = "next")) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % places.length);
+    } else {
+      setCurrentIndex((prevIndex) => (prevIndex - 1) % places.length);
+    }
+  };
+
+  const backgroundImage = {
+    backgroundImage: `linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.30) 0%,
+      rgba(0, 0, 0, 0.22) 100%
+    ), url(${places[currentIndex].img_url})`,
+  };
 
   return (
     <div className="search-carousel">
-      <div className="search-carousel__container">
+      <div className="search-carousel__container" style={backgroundImage}>
         <div className="search-carousel__title">
-          <p className="search-carousel__title-place">The Mexican paradise</p>
-          <h1 className="search-carousel__title-country">Cancun</h1>
+          <p className="search-carousel__title-place font-capitalize">
+            {places[currentIndex].description}
+          </p>
+          <h1 className="search-carousel__title-country font-capitalize">
+            {places[currentIndex].title}
+          </h1>
         </div>
         <div className="search-carousel__description">
           <div className="search-carousel__description-climate">
-            <div>
-              <p>38° C Very Hot</p>
-            </div>
-            <button className="search-carousel__button">
+            {isLoading ? (
+              <Loader />
+            ) : (
+              <div>
+                <p>
+                  {data?.current.temp_c}° C {data?.current.condition.text}
+                </p>
+              </div>
+            )}
+
+            <button
+              className="search-carousel__button"
+              onClick={() => handleNextPrevSlide("prev")}
+            >
               <img src="src/assets/images/home/prev.svg" alt="Previous" />
             </button>
-            <button className="search-carousel__button">
+            <button
+              className="search-carousel__button"
+              onClick={() => handleNextPrevSlide("next")}
+            >
               <img src="src/assets/images/home/next.svg" alt="Next" />
             </button>
           </div>

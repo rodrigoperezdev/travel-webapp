@@ -102,12 +102,20 @@ li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .font-underline {
   text-decoration: underline;
 }
 
 .font-bold {
   font-weight: 600;
+}
+
+.font-capitalize {
+  text-transform: capitalize;
 }
 
 .btn {
@@ -230,11 +238,11 @@ li {
 }
 .search-carousel {
   margin-block: 3.5rem;
+  transition: all ease 2s;
 }
 .search-carousel__container {
   border-radius: 2rem;
   background-color: #6c757d;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.22) 100%), url("src/assets/images/header/home-search.jpeg");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -309,6 +317,24 @@ li {
     margin-bottom: 1rem;
   }
 }
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
 .search-form {
   padding-inline: 5rem;
 }
@@ -448,6 +474,33 @@ li {
   padding: 0.5rem 0.5rem 0.5rem 0rem;
 }
 
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+  margin-inline-start: 2rem;
+}
+
+@keyframes l5 {
+  0% {
+    box-shadow: 20px 0 #fff, -20px 0 rgba(255, 255, 255, 0.133);
+    background: #fff;
+  }
+  33% {
+    box-shadow: 20px 0 #fff, -20px 0 rgba(255, 255, 255, 0.133);
+    background: rgba(255, 255, 255, 0.133);
+  }
+  66% {
+    box-shadow: 20px 0 rgba(255, 255, 255, 0.133), -20px 0 #fff;
+    background: rgba(255, 255, 255, 0.133);
+  }
+  100% {
+    box-shadow: 20px 0 rgba(255, 255, 255, 0.133), -20px 0 #fff;
+    background: #fff;
+  }
+}
 .header {
   display: flex;
   padding-block: 1.87rem;

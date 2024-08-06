@@ -4,3 +4,4 @@ export * from "./LocationInput";
 export * from "./DateInput";
 export * from "./ActivityInput";
 export * from "./Calendar";
+export * from "./Loader";

@@ -1,15 +1,11 @@
 .search-carousel {
   margin-block: 3.5rem;
+  transition: all ease 2s;
 
   &__container {
     border-radius: 2rem;
-    background-color: #6c757d; // Color de fondo base
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.22) 0%,
-        rgba(0, 0, 0, 0.22) 100%
-      ),
-      url("src/assets/images/header/home-search.jpeg");
+    background-color: #6c757d;
+
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,4 +112,23 @@
       }
     }
   }
+}
+
+//Animations
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }
