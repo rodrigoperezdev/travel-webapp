@@ -247,6 +247,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 9.5rem 5.19rem 9.12rem 8.5rem;
+  transition: background-image 0.5s ease;
 }
 .search-carousel__title {
   margin-bottom: 2.5rem;
@@ -263,6 +264,9 @@ button {
   top: 1rem;
   left: -2.5rem;
   background-color: #ffffff;
+}
+.search-carousel__title-country {
+  transition: color 0.5s ease, opacity 0.5s ease;
 }
 .search-carousel__description {
   display: flex;
@@ -377,6 +381,7 @@ button {
 .search-form__input-container {
   display: flex;
   align-items: center;
+  max-height: 36px;
 }
 .search-form__input::-moz-placeholder {
   color: #99a3ad;

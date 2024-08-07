@@ -5,11 +5,11 @@
   &__container {
     border-radius: 2rem;
     background-color: #6c757d;
-
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 9.5rem 5.19rem 9.12rem 8.5rem;
+    @include background-transition;
   }
 
   &__title {
@@ -28,6 +28,10 @@
         left: -2.5rem;
         background-color: $white-color;
       }
+    }
+
+    &-country {
+      @include text-transition;
     }
   }
 

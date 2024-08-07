@@ -4,6 +4,7 @@ import { Loader } from "./Loader";
 
 //This is the temporary DB I am using
 import places from "../../assets/js/placesDB";
+import nextImg from "../../assets/images/home/next.svg";
 
 export const SearchCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,7 +62,7 @@ export const SearchCarousel = () => {
               className="search-carousel__button"
               onClick={() => handleNextPrevSlide("next")}
             >
-              <img src="src/assets/images/home/next.svg" alt="Next" />
+              <img src={nextImg} alt="Next" />
             </button>
           </div>
 

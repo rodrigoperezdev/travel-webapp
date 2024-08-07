@@ -40,6 +40,8 @@
   &__input-container {
     display: flex;
     align-items: center;
+    //This prevents the container to be different between one and another (MUI components and normal containers)
+    max-height: 36px;
   }
 
   &__input,
