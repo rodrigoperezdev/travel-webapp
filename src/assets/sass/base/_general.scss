@@ -31,10 +31,20 @@ h3 {
   margin: 0;
 }
 
-p {
-  color: $white-color;
-  font-family: Poppins;
+h4 {
+  color: $oxford-blue;
   font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02375rem;
+  margin: 0;
+}
+
+p {
+  color: $cadet-gray-color;
+  font-family: Poppins;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -59,10 +69,6 @@ a {
   h1 {
     font-size: 7rem;
   }
-
-  p {
-    font-size: 1.4rem;
-  }
 }
 
 @media screen and (max-width: $x-large) {
@@ -73,29 +79,17 @@ a {
   h1 {
     font-size: 6rem;
   }
-
-  p {
-    font-size: 1.3rem;
-  }
 }
 
 @media screen and (max-width: $large) {
   h1 {
     font-size: 5rem;
   }
-
-  p {
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (max-width: $medium) {
   h1 {
     font-size: 4rem;
-  }
-
-  p {
-    font-size: 1rem;
   }
 }
 
@@ -115,4 +109,8 @@ li {
 
 button {
   cursor: pointer;
+}
+
+section {
+  margin-top: 8.5rem;
 }

@@ -2,6 +2,10 @@
   margin-block: 3.5rem;
   transition: all ease 2s;
 
+  & p {
+    color: $white-color;
+  }
+
   &__container {
     border-radius: 2rem;
     background-color: #6c757d;

@@ -1,4 +1,9 @@
-import { SearchCarousel, SearchForm } from "../components/section";
+import {
+  CategoryCarousel,
+  SearchCarousel,
+  SearchForm,
+  TrendingCarousel,
+} from "../components/section";
 import { Calendar } from "../components/section/Calendar";
 
 export const Home = () => {
@@ -6,6 +11,8 @@ export const Home = () => {
     <>
       <SearchCarousel />
       <SearchForm />
+      <CategoryCarousel />
+      <TrendingCarousel />
     </>
   );
 };

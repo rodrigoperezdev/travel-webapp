@@ -32,10 +32,20 @@ h3 {
   margin: 0;
 }
 
-p {
-  color: #ffffff;
-  font-family: Poppins;
+h4 {
+  color: #1d293f;
   font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.02375rem;
+  margin: 0;
+}
+
+p {
+  color: hsl(210, 11%, 64%);
+  font-family: Poppins;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -59,9 +69,6 @@ a {
   h1 {
     font-size: 7rem;
   }
-  p {
-    font-size: 1.4rem;
-  }
 }
 @media screen and (max-width: 1200px) {
   body {
@@ -70,24 +77,15 @@ a {
   h1 {
     font-size: 6rem;
   }
-  p {
-    font-size: 1.3rem;
-  }
 }
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 5rem;
   }
-  p {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 4rem;
-  }
-  p {
-    font-size: 1rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -104,6 +102,10 @@ li {
 
 button {
   cursor: pointer;
+}
+
+section {
+  margin-top: 8.5rem;
 }
 
 .font-underline {
@@ -134,7 +136,7 @@ button {
 }
 .btn--primary__disabled {
   color: #ffffff;
-  background-color: #99a3ad;
+  background-color: hsl(210, 11%, 64%);
 }
 
 .hamburger {
@@ -239,6 +241,9 @@ button {
 .search-carousel {
   margin-block: 3.5rem;
   transition: all ease 2s;
+}
+.search-carousel p {
+  color: #ffffff;
 }
 .search-carousel__container {
   border-radius: 2rem;
@@ -362,7 +367,7 @@ button {
   position: absolute;
   width: 100%;
   height: 7px;
-  background-color: rgba(245, 165, 35, 0.7411764706);
+  background-color: #f5a623;
   bottom: 7px;
   left: 0;
   z-index: -1;
@@ -384,7 +389,7 @@ button {
   max-height: 36px;
 }
 .search-form__input::-moz-placeholder {
-  color: #99a3ad;
+  color: hsl(210, 11%, 64%);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -394,7 +399,7 @@ button {
   padding: 0.5rem 0.5rem 0.5rem 0rem;
 }
 .search-form__input, .search-form__input::placeholder {
-  color: #99a3ad;
+  color: hsl(210, 11%, 64%);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -469,7 +474,7 @@ button {
 
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
   font-family: "Poppins", sans-serif !important;
-  color: #99a3ad !important;
+  color: hsl(210, 11%, 64%) !important;
   font-size: 1.125rem !important;
   font-style: normal;
   font-weight: 400;
@@ -506,6 +511,78 @@ button {
     background: #fff;
   }
 }
+.carousel__upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.carousel__title h2 {
+  color: #1d293f;
+}
+.carousel__title > p {
+  margin-top: 1rem;
+  color: #546179;
+}
+.carousel__buttons {
+  display: inline-block;
+}
+.carousel__buttons > button {
+  vertical-align: top;
+}
+
+.category-card {
+  border-radius: 0.5rem;
+  border: 1px solid var(--Gray-Gainsboro, #dce5eb);
+  background: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(14, 86, 124, 0.16);
+  width: 23.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.category-card__container {
+  padding: 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-card__rating {
+  display: flex;
+  justify-content: flex-end;
+  color: #f5a623;
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 111.111%;
+}
+.category-card__rating span {
+  background-color: #fef2de;
+  padding: 0.38rem 0.9rem;
+  border-radius: 1rem;
+}
+
+.category-card__content {
+  margin-top: 3.06rem;
+  text-align: center;
+  text-align: start;
+}
+.category-card__content img {
+  height: auto;
+  max-height: 3.125rem;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.category-card__content h4 {
+  margin-block: 1rem;
+}
+
 .header {
   display: flex;
   padding-block: 1.87rem;
@@ -537,7 +614,7 @@ button {
   position: absolute;
   width: 70px;
   height: 7px;
-  background-color: rgba(245, 165, 35, 0.7411764706);
+  background-color: #f5a623;
   bottom: 3px;
   left: 0;
   z-index: -1;
